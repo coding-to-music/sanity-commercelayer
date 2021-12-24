@@ -61,7 +61,9 @@ npm install && cd /studio && sanity install
 npm run dev
 ```
 
-This will run the frontend at `localhost:3000` and studio at `localhost:3333`.
+This will run the frontend at http://localhost:3000 
+
+and Sanity studio at http://localhost:3333/desk
 
 ### ⬇️ Import test studio content
 
@@ -102,6 +104,8 @@ npm install -g @commercelayer/commercelayer-seeder-cli
 // yarn
 yarn global add @commercelayer/commercelayer-seeder-cli
 ```
+
+https://dashboard.commercelayer.io/
 
 6. Run the command below to import a [set of products](https://data.commercelayer.app/seed/skus.json), related [prices](https://data.commercelayer.app/seed/prices.json), and [inventory](https://data.commercelayer.app/seed/stock_items.json) into your organization.
 
