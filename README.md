@@ -93,6 +93,8 @@ sanity dataset import ../.sanity-template/data/<name of extracted folder>/data.n
 
 1. Create a [Commerce Layer account](https://core.commercelayer.io/users/sign_up).
 
+Also, general info here: https://docs.commercelayer.io/developers/v/how-tos/
+
 2. Create a new organization.
 
 3. Create a new application in **Settings > Applications** with **Kind** set to `integration`, and **Role** set to `admin`.
@@ -109,6 +111,12 @@ npm install -g @commercelayer/commercelayer-seeder-cli
 yarn global add @commercelayer/commercelayer-seeder-cli
 ```
 
+Output
+```java
+✓ Importing the seed in Commerce Layer... 21.3 secs
+🎉The seed has been imported with success.
+```
+
 https://dashboard.commercelayer.io/
 
 6. Run the command below to import a [set of products](https://data.commercelayer.app/seed/skus.json), related [prices](https://data.commercelayer.app/seed/prices.json), and [inventory](https://data.commercelayer.app/seed/stock_items.json) into your organization.
@@ -121,6 +129,24 @@ commercelayer-seeder -i <your-client-id> -s <your-client-secret> -e https://<you
 
 ```bash
 commercelayer-seeder --help
+```
+
+Output
+```java
+Usage: commercelayer-seeder [options]
+
+Import a Commerce Layer seeder in your organization
+
+Options:
+  -v, --version                        output the current version
+  -V, --version                        output the version number
+  -i, --clientId <clientId>            your Commerce Layer application client ID
+  -s, --clientSecret <clientSecret>    your Commerce Layer application client secret
+  -e, --endpoint <endpoint>            your Commerce Layer application endpoint
+  -b, --businessModel <businessModel>  the kind of business model you want to import
+  -m, --maxItems <maxItems>            the maximum number of SKUs that will be imported
+  -u, --resourcesUrl <resourcesUrl>    the resources URL or local path
+  -h, --help                           display help for command
 ```
 
 ## Contributors guide
