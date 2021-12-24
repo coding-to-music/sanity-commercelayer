@@ -63,7 +63,11 @@ npm run dev
 
 This will run the frontend at http://localhost:3000 
 
+
+
 and Sanity studio at http://localhost:3333/desk
+
+![image](https://user-images.githubusercontent.com/3156358/147373463-f6973e9e-de32-41df-b6c5-1a7443b70860.png)
 
 ### ⬇️ Import test studio content
 
